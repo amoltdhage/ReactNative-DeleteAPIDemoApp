@@ -15,7 +15,7 @@ This React Native project is a comprehensive demonstration of integrating and ut
 
 | Home Screen | Loading Indicator | Users Data List with Delete Confirmation | User Deletion with Confirmation  | Users Data List after Delete Data  |
 |-------------|--------------------|------------------------------------------|----------------------------------|----------------------------------|
-| <img src="assets/screenshot_home.png" width="250"> | <img src="assets/screenshot_loading.png" width="250"> | <img src="assets/screenshot_usersdatalist1.png" width="250"> | <img src="assets/screenshot_delete_confirmation.png" width="250"> | <img src="assets/screenshot_usersdatalist2.png" width="250">  |
+| <img src="assets/screenshot_home.png" width="250"> | <img src="assets/screenshot_loading.png" width="250"> | <img src="assets/screenshot_usersdatalist1.png" width="250"> | <img src="assets/screenshot_confirmDeleteUser.png" width="250"> | <img src="assets/screenshot_usersdatalist2.png" width="250">  |
 
 
 ### Demo
