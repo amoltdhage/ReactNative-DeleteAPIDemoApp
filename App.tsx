@@ -13,6 +13,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   ActivityIndicator,
+  Alert,
 } from 'react-native';
 
 interface UserData {
@@ -55,6 +56,24 @@ const App = () => {
     }, 2000); // Wait for 2 seconds before fetching data
   };
 
+  const confirmDeleteUser = (userId: number) => {
+    Alert.alert(
+      'Confirm Deletion',
+      'Are you sure you want to delete this user?',
+      [
+        {
+          text: 'Cancel',
+          style: 'cancel',
+        },
+        {
+          text: 'Yes',
+          onPress: () => deleteUser(userId),
+        },
+      ],
+      { cancelable: false }
+    );
+  };
+
   const unfetchUserData = () => {
     setIsFetching(false);
     setData([]);
@@ -94,7 +113,7 @@ const App = () => {
       </View>
       <TouchableOpacity
         style={styles.deleteButton}
-        onPress={() => deleteUser(item.id)}
+        onPress={() => confirmDeleteUser(item.id)}
       >
         <Text style={styles.buttonText}>Delete</Text>
       </TouchableOpacity>
