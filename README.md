@@ -2,29 +2,27 @@
 
 ## Overview
 
-This React Native project serves as a comprehensive demonstration of integrating and utilizing the delete API method. The application fetches user data from a server and provides users with the ability to delete individual records seamlessly.
+This React Native project is a comprehensive demonstration of integrating and utilizing the delete API method. The application fetches user data from a server and provides users with the ability to delete individual records seamlessly. The new code introduces a confirmation dialog before deleting a user, enhancing user experience.
 
 ## Features
 - **Screenshots:** See below for visual representations of the app's functionality.
 - **Demo App:** Ideal for learning and understanding delete API integration in React Native.
 - **Fetch User Data:** Retrieve user data from a remote server.
-- **Delete User:** Implement a delete API method to remove specific user records.
+- **Delete User with Confirmation:** Implement a delete API method with a confirmation dialog for enhanced user experience.
 - **User Interface:** A clean and responsive user interface.
-
 
 ### Screenshots
 
-| Home Screen | Loading Indicator |  Users Data List with Delete Button |  Users Data List after Delete Data |
-|-------------------|-------------------|-------------------|-------------------|
-| <img src="assets/screenshot_home.png" width="250"> | <img src="assets/screenshot_loading.png" width="250"> | <img src="assets/screenshot_usersdatalist1.png" width="250"> | <img src="assets/screenshot_usersdatalist2.png" width="250"> |
+| Home Screen | Loading Indicator | Users Data List with Delete Confirmation | User Deletion with Confirmation  | Users Data List after Delete Data  |
+|-------------|--------------------|------------------------------------------|----------------------------------|----------------------------------|
+| <img src="assets/screenshot_home.png" width="250"> | <img src="assets/screenshot_loading.png" width="250"> | <img src="assets/screenshot_usersdatalist1.png" width="250"> | <img src="assets/screenshot_delete_confirmation.png" width="250"> | <img src="assets/screenshot_usersdatalist2.png" width="250">  |
 
 
 ### Demo
 
-|        *Demo Gif*        |
-|--------------------------|
-| <img src="assets/demo.gif" width="250"> |
-
+| *Demo Gif* | *New Demo Gif* |
+|------------|----------------|
+| <img src="assets/demo.gif" width="250"> | <img src="assets/newdemo.gif" width="250"> |
 
 ## Project Structure
 
@@ -35,7 +33,7 @@ The project is structured with the following key components:
 | App Component          | The main component that orchestrates the functionality.                             |
 | User Data Fetching     | Utilizes the `fetchUserData` function to fetch user data from the server.             |
 | Delayed Fetch           | Implements a delayed fetch using `fetchUserDataWithDelay` to simulate real-world scenarios. |
-| User Deletion          | Enables users to delete individual records through the `deleteUser` function.        |
+| User Deletion with Confirmation | Enables users to confirm the deletion of individual records through the `confirmDeleteUser` function. |
 | User Item Rendering    | Renders user data in a FlatList with each item having a "Delete" button in the top-right corner. |
 | Styling                | Utilizes StyleSheet for consistent and visually appealing UI.                        |
 
@@ -74,7 +72,9 @@ The project is structured with the following key components:
 
 6. **Explore and Learn:**
    - Fetch user data by pressing "Fetch User Data" and observe the delayed fetch.
-   - Delete individual user records using the "Delete" button.
+   - Delete individual user records with a confirmation dialog using the "Delete" button.
+
+This project provides a practical example of integrating delete API functionality with React Native, making it an excellent resource for both learning and reference.
 
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
